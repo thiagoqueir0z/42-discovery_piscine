@@ -1,7 +1,6 @@
 # 🔍 42 Porto Discovery Piscine Repository
 
 <div align="center">
-    <img src="https://img.shields.io/badge/42_Porto-00BABC?logo=42&logoColor=white&style=for-the-badge" alt="42 Porto Badge"/>
     <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML Badge"/>
     <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" alt="CSS Badge"/>
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" alt="JS Badge"/>
@@ -20,7 +19,7 @@ The **Discovery Piscine** is an introductory program offered by **42 Porto**. It
 
 ## 📚 Study Repository: Discovery Journey
 
-This repository contains the projects and exercises I completed during the 42 Porto Discovery Piscine. It serves as a digital journal of my first steps into the 42 ecosystem.
+This repository contains the projects and exercises I completed during the 42 Porto Discovery Piscine.
 
 ### 🎯 Objective of this Repository
 
@@ -40,7 +39,7 @@ The modules are organized by daily challenges and specific topics:
 | `Day 02` | CSS Basics | Styling, colors, and layout positioning. |
 | `Day 03` | Responsive Web | Flexbox, Grid, and mobile-first design. |
 | `Day 04` | Intro to JS | Variables, functions, and DOM manipulation. |
-| `Final Project` | Web Application | A complete project integrating all learned skills. |
+| `Rush` | Web Application | A complete project integrating all learned skills. |
 
 ---
 
