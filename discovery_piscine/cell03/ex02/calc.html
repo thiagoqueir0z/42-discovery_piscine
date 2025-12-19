@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator 42</title>
+    <link href="calc.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h1>Calculator</h1>
+            <form onsubmit="calculate(); return false;">
+                <input type="text" id="num1" required placeholder="Número 1" />
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+                <input type="text" id="num2" required placeholder="Número 2" />
+                <input type="submit" value="Try me!" />
+            </form>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

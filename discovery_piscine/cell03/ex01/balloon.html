@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01 - O Balão</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-color: #f0f0f0;
+        }
+
+        .balloon {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: width 0.2s, height 0.2s, background-color 0.3s;
+        }
+
+        .red { background-color: red; }
+        .green { background-color: green; }
+        .blue { background-color: blue; }
+    </style>
+</head>
+
+<body>
+    <div class="balloon red" id="balloon"></div>
+
+    <script>
+        const balloon = document.getElementById("balloon");
+
+        function nextColor() {
+            const classes = balloon.classList;
+            if (classes.contains("red")) {
+                classes.replace("red", "green");
+            } else if (classes.contains("green")) {
+                classes.replace("green", "blue");
+            } else {
+                classes.replace("blue", "red");
+            }
+        }
+
+        function prevColor() {
+            const classes = balloon.classList;
+            if (classes.contains("red")) {
+                classes.replace("red", "blue");
+            } else if (classes.contains("blue")) {
+                classes.replace("blue", "green");
+            } else {
+                classes.replace("green", "red");
+            }
+        }
+
+        balloon.onclick = function() {
+            nextColor();
+            let newSize = balloon.offsetWidth + 10;
+
+            if (newSize > 420) {
+                balloon.style.width = "200px";
+                balloon.style.height = "200px";
+            } else {
+                balloon.style.width = newSize + "px";
+                balloon.style.height = newSize + "px";
+            }
+        };
+
+        balloon.onmouseleave = function() {
+            prevColor();
+            let newSize = Math.max(200, balloon.offsetWidth - 5);
+            balloon.style.width = newSize + "px";
+            balloon.style.height = newSize + "px";
+        };
+    </script>
+</body>
+
+</html>
